@@ -1,15 +1,5 @@
 {
-  "functions": {
-    "api/meta.js": {
-      "runtime": "@vercel/node@3.0.0"
-    },
-    "api/amplitude.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
   "rewrites": [
-    { "source": "/api/meta", "destination": "/api/meta.js" },
-    { "source": "/api/amplitude", "destination": "/api/amplitude.js" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
